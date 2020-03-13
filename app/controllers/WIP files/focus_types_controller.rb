@@ -1,2 +1,0 @@
-class FocusTypesController < ApplicationController
-end
