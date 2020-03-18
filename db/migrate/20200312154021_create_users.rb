@@ -4,6 +4,8 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :username
       t.string :password_digest
       t.string :profile_pic
+      t.integer :time_meditated
+      t.integer :time_focused
 
       t.timestamps
     end

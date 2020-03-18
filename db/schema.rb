@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 2020_03_12_162217) do
     t.string "username"
     t.string "password_digest"
     t.string "profile_pic"
+    t.integer "time_meditated"
+    t.integer "time_focused"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
