@@ -33,9 +33,10 @@ ActiveRecord::Schema.define(version: 2020_03_12_162217) do
   create_table "meditation_sessions", force: :cascade do |t|
     t.string "start_time"
     t.string "end_time"
-    t.string "length"
+    t.string "duration"
+    t.string "note"
     t.string "mood"
-    t.string "notes"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

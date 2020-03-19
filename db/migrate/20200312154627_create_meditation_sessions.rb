@@ -3,9 +3,10 @@ class CreateMeditationSessions < ActiveRecord::Migration[6.0]
     create_table :meditation_sessions do |t|
       t.string :start_time
       t.string :end_time
-      t.string :length
+      t.string :duration
+      t.string :note
       t.string :mood
-      t.string :notes
+      t.integer :user_id
 
       t.timestamps
     end
