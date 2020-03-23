@@ -15,6 +15,11 @@ class MeditationSessionsController < ApplicationController
     render json: @MeditationSessions
   end
 
+  def destroy 
+    @meditation_session = MeditationSession.find_by(id: params[:id])
+    @meditation_session.destroy
+  end
+
 
   private
 
