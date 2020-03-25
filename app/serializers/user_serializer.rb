@@ -6,5 +6,6 @@ class UserSerializer < ActiveModel::Serializer
   # end
 
   has_many :meditation_sessions, serializer: MeditationSessionSerializer
+  has_many :focus_sessions, serializer: FocusSessionSerializer
 
 end
