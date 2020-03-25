@@ -11,8 +11,8 @@ class MeditationSessionsController < ApplicationController
   end
 
   def index 
-    @MeditationSessions = MeditationSession.all 
-    render json: @MeditationSessions
+    @meditation_sessions = MeditationSession.all 
+    render json: @meditation_sessions
   end
 
   def destroy 

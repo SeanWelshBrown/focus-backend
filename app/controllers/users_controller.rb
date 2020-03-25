@@ -18,6 +18,9 @@ class UsersController < ApplicationController
     if params[:meditation_duration]
       new_time = @user.time_meditated + params[:meditation_duration]
       @user.update(time_meditated: new_time)
+    elsif params[:focus_duration]
+      new_time = @user.time_focused + params[:focus_duration]
+      @user.update(time_focused: new_time)
     end
   end
 
