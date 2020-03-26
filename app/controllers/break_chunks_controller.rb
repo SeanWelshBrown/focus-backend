@@ -1,2 +1,0 @@
-class BreakChunksController < ApplicationController
-end

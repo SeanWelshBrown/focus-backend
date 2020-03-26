@@ -10,25 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_12_162217) do
+ActiveRecord::Schema.define(version: 2020_03_12_155328) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "break_chunks", force: :cascade do |t|
-    t.integer "duration"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "focus_sessions", force: :cascade do |t|
     t.string "start_time"
     t.string "end_time"
+    t.integer "duration"
     t.string "work_chunks"
     t.string "break_chunks"
-    t.integer "duration"
     t.string "focus_type"
-    t.string "notes"
+    t.string "note"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -51,12 +45,6 @@ ActiveRecord::Schema.define(version: 2020_03_12_162217) do
     t.string "profile_pic"
     t.integer "time_meditated"
     t.integer "time_focused"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "work_chunks", force: :cascade do |t|
-    t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
