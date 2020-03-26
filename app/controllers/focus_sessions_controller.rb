@@ -23,7 +23,7 @@ class FocusSessionsController < ApplicationController
   private
 
   def focus_session_params
-    params.permit(:start_time, :end_time, :work_chunks, :break_chunks, :duration, :focus_type, :notes)
+    params.permit(:start_time, :end_time, :work_chunks, :break_chunks, :duration, :focus_type, :note)
   end
   
 end
