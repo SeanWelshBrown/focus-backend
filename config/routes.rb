@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get "/persist", to: "users#persist"
 
+  get "/weather", to: "weather#show"
+
 end
