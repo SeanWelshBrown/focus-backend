@@ -21,6 +21,8 @@ class UsersController < ApplicationController
     elsif params[:focus_duration]
       new_time = @user.time_focused + params[:focus_duration]
       @user.update(time_focused: new_time)
+    elsif params[:profile_pic]
+      @user.update(profile_pic: params[:profile_pic])
     end
   end
 
